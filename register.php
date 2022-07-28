@@ -1,6 +1,7 @@
-<?php include('serve.php');?>
+<?php include('serve.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,12 @@
     <title>RegisterPage</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="header">
         <h2>Register</h2>
     </div>
-    <form action="register_db.php">
+    <form action="register_db.php" method="post">
         <div class="input-group">
             <label for="">Username</label>
             <input type="text" name="username">
@@ -35,4 +37,5 @@
         <p>Already a member ?<a href="login.php">Sing in</a></p>
     </form>
 </body>
+
 </html>

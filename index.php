@@ -22,25 +22,25 @@ if (isset($_GET['logout'])) {
 </head>
 
 <body>
-    <div class="header"></div>
-    <h2>Home Page</h2>
-    <!--noti-->
-    <?php if (isset($_SESSION['success'])) : ?>
-        <div class="success">
-            <h3>
-                <?php 
-                echo $_SESSION['success'] ;
-                unset ($_SESSION['success']);
-                ?>
-                
-            </h3>
-        </div>
-    <?php endif ?>
+    <div class="header">
+        <h2>Home Page</h2 <!--noti-->
+        <?php if (isset($_SESSION['success'])) : ?>
+            <div class="success">
+                <h2>
+                    <?php
+                    echo $_SESSION['success'];
+                    unset($_SESSION['success']);
+                    ?>
+
+                </h2>
+            </div>
+        <?php endif ?>
+    </div>
     <div class="content">
         <!-- Login information -->
         <?php if (isset($_SESSION['username'])) : ?>
             <p>Welcome <strong><?php echo $_SESSION['username'] ?></strong></p>
-            <p><a href="index.php?logout='1'" style="color: red;"></a>Logout</p>
+            <p><a href="index.php?logout='1'" style="color: red;">Logout</a></p>
         <?php endif ?>
     </div>
 </body>
